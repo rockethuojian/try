@@ -1,6 +1,6 @@
 Accelerating Multiplication and Parallelizing Operations in Non-Volatile Memory
 
-BACKGRAOUD:
+BACKGROUD:
 IoT application to run machine learning algorithms.
 
 PROBLEM:
