@@ -1,0 +1,40 @@
+Accelerating Multiplication and Parallelizing Operaitions in Non-Volatile Memory
+
+BACKGRAOUD:
+IoT application to run machine learning algorithms.
+
+PROBLEM:
+- cloud: not scalable and not real-time response.
+- local (traditional core): high energy consumption and slow processing speed, because of memory/cache bottleneck.
+
+SOLUTION: 
+Approximate processing in-memory architecture (APIM), based on non-volatile ReRAM( Resistive RAM)
+- APIM
+  - Architecture
+     - blocked memory structure
+     - data block and processing block interchangeably
+     - configurable interconnects
+  - Multiplication having three stages
+     - partial product generation (partial N * N)
+     - fast addition (reduce N to 2)
+     - final product generation 
+  - Approximation: sacrafice accuracy for higher speed
+- ReRAM
+  - Non-volatile (resistive)
+  - low latency 100ns ( DRAM 10ns, NAND_SLC/TLC 100us)
+  - Meet the need of neuromorphic computing, which is analog
+
+EVALUATION:
+- Plaform
+  - circuit level siulation with Cadence Virtuoso
+- Target
+  - addition of N operands of length N bits
+- Result (Exact APIM)
+  - dataset > 200MB
+    APIM is much faster and more energy efficient than GPU
+  - dataset > 1GB
+    APIM is 28* energy savings, 4.8* performance improvement
+
+Reference:
+https://semiengineering.com/what-happened-to-reram/
+https://www.flashmemorysummit.com/Proceedings2019/08-06-Tuesday/20190806_NEWM-102B-1_Webb.pdf
