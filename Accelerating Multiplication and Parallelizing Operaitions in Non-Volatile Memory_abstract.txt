@@ -1,4 +1,4 @@
-Accelerating Multiplication and Parallelizing Operaitions in Non-Volatile Memory
+Accelerating Multiplication and Parallelizing Operations in Non-Volatile Memory
 
 BACKGRAOUD:
 IoT application to run machine learning algorithms.
@@ -8,7 +8,7 @@ PROBLEM:
 - local (traditional core): high energy consumption and slow processing speed, because of memory/cache bottleneck.
 
 SOLUTION: 
-Approximate processing in-memory architecture (APIM), based on non-volatile ReRAM( Resistive RAM)
+Approximate processing in-memory architecture (APIM), based on non-volatile ReRAM (Resistive RAM)
 - APIM
   - Architecture
      - blocked memory structure
@@ -18,15 +18,15 @@ Approximate processing in-memory architecture (APIM), based on non-volatile ReRA
      - partial product generation (partial N * N)
      - fast addition (reduce N to 2)
      - final product generation 
-  - Approximation: sacrafice accuracy for higher speed
+  - Approximation: sacrifice accuracy for higher speed
 - ReRAM
   - Non-volatile (resistive)
-  - low latency 100ns ( DRAM 10ns, NAND_SLC/TLC 100us)
+  - low latency 100ns (DRAM 10ns, NAND_SLC/TLC 100us)
   - Meet the need of neuromorphic computing, which is analog
 
 EVALUATION:
-- Plaform
-  - circuit level siulation with Cadence Virtuoso
+- Platform
+  - circuit level simulation with Cadence Virtuoso
 - Target
   - addition of N operands of length N bits
 - Result (Exact APIM)
